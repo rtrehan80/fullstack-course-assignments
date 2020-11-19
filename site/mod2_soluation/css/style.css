@@ -2,32 +2,49 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family:verdana; 
+  font-size: 110%;
+}
 h1 {
   margin-bottom: 15px;
+  text-align: center;
 }
-
+h2 {
+  border: solid 1px black;
+  text-align: right;
+  width: 150px;
+  margin: 0 0 0 Auto;
+  padding: 5px;
+}
 p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  margin: 5px
 }
-
+#chicken {
+  background-color: gray;
+  border: solid 1px black;
+}
+#beef { 
+  background-color: gray;
+  border: solid 1px black;
+}
+#sushi {
+  background-color: gray;
+  border: solid 1px black;
+}
+.chicken { background-color: pink;}
+.beef { background-color: red;}
+.sushi { background-color: yellow;}
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
-
 /********** Large devices only **********/
 /* desktop 992px and above */
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+    padding: 0 10px;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -66,13 +83,12 @@ p {
     width: 100%;
   }
 }
-
 /********** Medium devices only **********/
 /* tablet 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    padding: 10px;
   }
   .col-md-1 {
     width: 8.33%;
@@ -114,9 +130,8 @@ p {
 /********** Small devices only **********/
 /* mobile less than 767px  */
 @media (max-width: 767px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid green;
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    padding-bottom: 10px;
     width: 100%
   }
 }
